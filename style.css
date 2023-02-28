@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{  
+    font-family: 'Arsenal', sans-serif;
+}
+
+.swiper-pagination-bullet-active {
+    background: #000000;
+  }
+
+
+/*navbar*/
+
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url("/images/bg.jpg");
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    background-clip: padding-box;
+    background-color:rgba(238,35,38);
+    font-size: 4.5rem;
+}
+.hero_desc {
+    background-clip: padding-box;
+    background-color: rgba(238,35,38);
+    font-size: 2rem;
+}
+.hero-text {
+    background-clip: padding-box;
+    background-color: rgba(238,35,38);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* past projects */
+    .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+  }
+  
+   .box-container .box:hover .image img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  
+   .box-container .box.hide {
+    display: none;
+  }
+  
+   .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+  }
+  
+   .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+   .box-container .box .image h3 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #444;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: .5rem 1.5rem;
+    background: #fff;
+  }
+  
+   .box-container .box .content {
+    padding: 2rem;
+    text-align: center;
+    border: 0.1rem solid #845318;
+  }
+  
+   .box-container .box .content .btn {
+    background-color: #31b768;
+    color: #fff;
+    border-width: 0;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+   .box-container .box .content .btn:hover {
+    background-color: #185b34;
+  }
+  
+   .box-container .box .content h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #444;
+  }
+  
+   .box-container .box .content p {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    line-height: 2;
+    color: #777;
+  }
+  
+   .box-container .box .content .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 0.1rem solid #845318;
+  }
+  
+   .box-container .box .content .icons span {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #444;
+  }
+  
+   .box-container .box .content .icons span i {
+    color: #845318;
+    padding-right: .5rem;
+  }
+  
+   .load-more {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
